@@ -28,7 +28,7 @@ body {
   z-index: 11;
 }
 nav.top-bar {
-  background: url('../img/navbar.png') repeat-x center;
+  background: url('https://cdn.rawgit.com/rainbow-unicorn/gaymertags/gh-pages/img/navbar.png') repeat-x center;
 }
 
 /**
