@@ -1,0 +1,9 @@
+title: "Phoenix Gaymertags"
+author: "C1V0"
+url: "http://phxgaymers.gamertagdb.com"
+description: "Lookup gamertags in the Phoenix Gaymers group docs using this prototype app."
+analyticsId: "UA-66645976-1"
+fbAppId: "399385496935911"
+exclude:
+  - README.md
+  - components/*.html

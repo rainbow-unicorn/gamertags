@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+  <head>
+{% include element/head.html %}
+  </head>
+  <body>
+{% include template/navigation.html %}
+{% include template/jumbotron.html %}
+<div class="row">
+      <div id="main" class="small-12 medium-9 push-3 columns">
+{{ content }}
+      </div>
+      <div class="hide-for-small-only medium-3 pull-9 columns">
+{% include template/sidebar.html %}
+      </div>
+    </div>
+{% include template/social.html %}
+{% include template/footer.html %}
+    <img src="img/gaymers.svg" id="logo-float" alt="Phoenix Gaymers">
+{% include modal/login.html %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.8/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.8/js/dataTables.foundation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.2/remodal.min.js"></script>
+    <script src="js/gamertags.js"></script>
+    <script>$(document).foundation();</script>
+{% include element/fbsdk.html %}
+{% include element/analytics.html %}
+  </body>
+</html>
