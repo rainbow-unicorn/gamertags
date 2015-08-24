@@ -60,13 +60,17 @@ $(document).ready(function() {
     var html = $.parseHTML(message);
     $.each(html, function(i, el) {
       if (el.childNodes.length != 'undefined' && el.childNodes.length >= 2) {
-        var props = el.textContent.split(/\.+/);
-        for (var c = 0; c < props.length; c++) {
-          props[c] = props[c].trim();
-        }
+        var props = el.textContent.split(/[.]+/);
         var tag = [];
-        tag['gamer'] = props[0];
-        tag['gamertag'] = props[1];
+        for (var c = 0; c < props.length; c++) {
+          if (props[c].match(/\d{4}-\d{4}-\d{4}/)) {
+            tag['gamertag'] = props[c];
+          } else if (props[c].match(/[\w()]+/)) {
+            tag['gamer'] = props[c];
+          } else {
+            return false;
+          }
+        }
         Gamertags.push(tag);
       }
     });
