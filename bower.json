@@ -1,0 +1,9 @@
+{
+  "name": "phoenix-gaymertags",
+  "dependencies": {
+    "datatables": "~1.10.9",
+    "font-awesome": "~4.4.0",
+    "foundation": "zurb/bower-foundation",
+    "remodal": "~1.0.4"
+  }
+}
