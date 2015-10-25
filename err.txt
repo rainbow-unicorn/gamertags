@@ -1,0 +1,50 @@
+[4mRunning "jshint:all" (jshint) task[24m
+
+[1m   app/js/app.js[22m
+      5 |[90m  var Gamertags = [],[39m
+           ^ Missing "use strict" statement.
+     12 |[90m    "columns": [{[39m
+                      ^ Strings must use singlequote.
+     13 |[90m      "data": "gamer"[39m
+                     ^ Strings must use singlequote.
+     13 |[90m      "data": "gamer"[39m
+                              ^ Strings must use singlequote.
+     15 |[90m      "data": "gamertag"[39m
+                     ^ Strings must use singlequote.
+     15 |[90m      "data": "gamertag"[39m
+                                 ^ Strings must use singlequote.
+     71 |[90m        alert('Something went wrong.')[39m
+                                               ^ Missing semicolon.
+     87 |[90m      if (el.childNodes.length != 'undefined' && el.childNodes.length >= 2) {[39m
+                                          ^ Expected '!==' and instead saw '!='.
+     92 |[90m            tag['gamertag'] = props[c];[39m
+                        ^ ['gamertag'] is better written in dot notation.
+     94 |[90m            tag['gamer'] = props[c];[39m
+                        ^ ['gamer'] is better written in dot notation.
+    112 |[90m        "gamer": gamertags[i]['gamer'],[39m
+                        ^ Strings must use singlequote.
+    112 |[90m        "gamer": gamertags[i]['gamer'],[39m
+                                      ^ ['gamer'] is better written in dot notation.
+    113 |[90m        "gamertag": gamertags[i]['gamertag'],[39m
+                           ^ Strings must use singlequote.
+    113 |[90m        "gamertag": gamertags[i]['gamertag'],[39m
+                                         ^ ['gamertag'] is better written in dot notation.
+    127 |[90m      "gamer": gamer,[39m
+                      ^ Strings must use singlequote.
+    128 |[90m      "gamertag": gamertag[39m
+                         ^ Strings must use singlequote.
+     33 |[90m      FB.init({[39m
+               ^ 'FB' is not defined.
+     52 |[90m    FB.login(function(response) {[39m
+             ^ 'FB' is not defined.
+     67 |[90m    FB.api([39m
+             ^ 'FB' is not defined.
+      7 |[90m      status = '';[39m
+               ^ 'status' is defined but never used.
+    125 |[90m  function gamertagFactory(gamer, gamertag) {[39m
+                    ^ 'gamertagFactory' is defined but never used.
+
+[31m>> [39m21 errors in 2 files
+[33mWarning: Task "jshint:all" failed. Use --force to continue.[39m
+
+[31mAborted due to warnings.[39m
