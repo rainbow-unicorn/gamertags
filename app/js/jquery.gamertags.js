@@ -32,7 +32,7 @@
          */
         init: function() {
           this.options.loginModal.open();
-          $('#gaymertags').DataTable({
+          $('#gamertags').DataTable({
             "columns": [{
               "data": "gamer"
             }, {
@@ -136,7 +136,7 @@
                */
               function renderList(gamertags) {
                 for (var i = 0; i < gamertags.length; i++) {
-                  $('#gaymertags').DataTable().row.add({
+                  $('#gamertags').DataTable().row.add({
                     "gamer": gamertags[i]['gamer'],
                     "gamertag": gamertags[i]['gamertag'],
                   }).draw();
