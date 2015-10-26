@@ -1,10 +1,20 @@
-# Gamertag directory
+# Gamertag browser
 
-A directory of gamertags for the Phoenix Gaymers Meetup group. Uses the Facebook API to access a collection of public gamertag documents on the group's Facebook page.
+> Browse member gamertags stored in Facebook group documents.
+
+A JavaScript app that lets you browse group member gamertags.
+
+[View demo.](http://phxgaymers.gamertagdb.com)
+
+#### How it works
+
+Gamertag documents are retrieved using the Facebook API and gamertag enteries in the following format are extracted.
+
+    Member Name........ gamertag
 
 ### Screenshot
 
-[![Project Directory](img/screenshot.jpg)](http://phxgaymers.gamertagdb.com)
+[![Gamertags](screenshot.png)](http://phxgaymers.gamertagdb.com)
 
 ### License
 
